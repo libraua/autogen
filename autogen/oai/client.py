@@ -156,7 +156,6 @@ class OpenAIWrapper:
             client = GeminiClient(**openai_config)
         else:
             client = OpenAI(**openai_config)
-        client.api_type = config.get("api_type", "open_ai")
         return client
 
     @classmethod
